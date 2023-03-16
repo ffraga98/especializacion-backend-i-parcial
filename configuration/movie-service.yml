@@ -1,6 +1,8 @@
 server:
   port: ${PORT:${SERVER_PORT:0}}
 
+idRandom: ${random.value}
+
 spring:
   application:
     name: movie-service
@@ -26,6 +28,9 @@ spring:
 message: hello from movie-service
 
 eureka:
+  instance:
+    hostname: localhost
+    instance-id: ${spring.application.name}:${spring.aplication.instance-id:${random.value}}
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
