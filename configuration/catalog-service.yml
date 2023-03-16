@@ -27,6 +27,8 @@ message: hello from catalog-service
 eureka:
   client:
     serviceUrl:
+      register-with-eureka: true
+      fetch-pull: true
       defaultZone: http://localhost:8761/eureka/
     management:
       endpoints:
