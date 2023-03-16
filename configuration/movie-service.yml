@@ -27,9 +27,9 @@ message: hello from movie-service
 
 eureka:
   client:
-    register-with-eureka: true
-    fetch-register: true
-    service-url:
+    registerWithEureka: true
+    fetchRegister: true
+    serviceUrl:
       defaultZone: http://localhost:8761/eureka/
     management:
       endpoints:
