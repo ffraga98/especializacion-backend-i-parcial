@@ -6,7 +6,7 @@ spring:
     name: movie-service
   datasource:
     url: jdbc:h2:mem:testdb
-    #driverClassName: org.h2.Driver
+    driverClassName: org.h2.Driver
     username: sa
     password: sa
   jpa:
@@ -25,8 +25,13 @@ spring:
 
 message: hello from movie-service
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    management:
+      endpoints:
+        web:
+          exposure:
+            include: '*'
+
