@@ -1,5 +1,5 @@
-server:
-  port: ${PORT:8888}
+application:
+  port: ${PORT:8080}
 
 spring:
   application:
@@ -11,4 +11,6 @@ spring:
           uri: https://github.com/ffraga98/especializacion-backend-i-parcial
           default-label: main
           force-pull: true
-          source-paths: configuration
+          search-paths: configuration
+
+
