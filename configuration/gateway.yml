@@ -9,8 +9,6 @@ spring:
      discovery:
        locator:
          enabled: true
-       default-filters:
-         - name: FilterCustom
        routes:
          -  id: mscatalog
             uri: lb://catalog-service
