@@ -1,4 +1,4 @@
-application:
+server:
   port: ${PORT:8888}
 
 spring:
@@ -12,5 +12,3 @@ spring:
           default-label: main
           force-pull: true
           search-paths: configuration
-
-
