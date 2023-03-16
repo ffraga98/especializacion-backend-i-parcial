@@ -9,6 +9,6 @@ import java.util.List;
 
 @FeignClient(name = "movie-service")
 public interface iMovieServiceClient {
-    @GetMapping("/{genre}")
+    @GetMapping("movies/{genre}")
     List<Movie> getMovieByGenre(@PathVariable String genre);
 }

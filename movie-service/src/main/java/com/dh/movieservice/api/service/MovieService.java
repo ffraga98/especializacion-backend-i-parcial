@@ -9,14 +9,13 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-@RequiredArgsConstructor
 public class MovieService {
 
     private final MovieRepository repository;
 
-    //public MovieService(MovieRepository repository) {
-    //    this.repository = repository;
-    //}
+    public MovieService(MovieRepository repository) {
+        this.repository = repository;
+    }
 
     public List<Movie> findByGenre(String genre) {
         return repository.findByGenre(genre);
