@@ -27,4 +27,8 @@ public class CatalogController {
         return ResponseEntity.ok().body(service.getMovieByGenre(genre));
     }
 
+    //@GetMapping("/instance")
+    //ResponseEntity<String> getGenre() {
+    //    return ResponseEntity.ok().body(service.getInstance());
+    //}
 }

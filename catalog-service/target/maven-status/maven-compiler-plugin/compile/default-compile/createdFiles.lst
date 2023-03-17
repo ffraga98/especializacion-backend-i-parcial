@@ -1,3 +1,4 @@
+com\dh\catalogservice\configuration\LoadBalancerConfiguration$CustomLoadBalancerConfiguration.class
 com\dh\catalogservice\api\controller\CatalogController.class
 com\dh\catalogservice\api\service\CatalogService.class
 com\dh\catalogservice\api\client\iMovieServiceClient.class
@@ -6,3 +7,4 @@ com\dh\catalogservice\domain\model\Movie.class
 com\dh\catalogservice\api\controller\TestController.class
 com\dh\catalogservice\AppConfig.class
 com\dh\catalogservice\api\service\ICatalogService.class
+com\dh\catalogservice\configuration\LoadBalancerConfiguration.class
